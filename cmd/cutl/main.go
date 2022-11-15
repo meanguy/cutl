@@ -31,13 +31,11 @@ func ParseArgs() Args {
 	flag.StringVar(
 		&args.File,
 		"file",
-		"tests/deeply-nested.json",
+		"",
 		"input file for translation - defaults to stdin if not specified",
 	)
 	flag.StringVar(&args.FromFormat, "f", "json", "format of the source input")
-	flag.StringVar(&args.FromFormat, "from", "json", "format of the source input")
 	flag.StringVar(&args.ToFormat, "t", "yaml", "format to translate the source input to")
-	flag.StringVar(&args.ToFormat, "to", "yaml", "format to translate the source input to")
 	flag.Parse()
 
 	return args
