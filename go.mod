@@ -1,4 +1,4 @@
-module cutl
+module github.com/meanguy/cutl
 
 go 1.19
 
